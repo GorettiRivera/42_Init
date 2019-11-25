@@ -1,0 +1,6 @@
+#!/bin/bash
+# Make the intra.42.fr address reroute to 46.19.122.85
+
+We need to add the below line to /etc/hosts file.
+
+46.19.122.85 intra.42.fr

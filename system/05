@@ -1,0 +1,5 @@
+# Name the command that determines the state of the SSH service.
+
+service ssh status
+
+#Install SSH server: apt-get install openssh-server
