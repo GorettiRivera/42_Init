@@ -2,4 +2,19 @@
 # Write a script which displays only the login, UID and Path of each entry of the
 # /etc/passwd file.
 
+# Username: It is used when user logs in.
+# Password: An x character indicates that encrypted password is stored in /etc/shadow file. 
+# User ID (UID): Each user must be assigned a user ID (UID). UID 0 (zero) is reserved for root and UIDs 1-99 are reserved for other predefined accounts.
+# Group ID (GID): The primary group ID (stored in /etc/group file)
+# User ID Info: The comment field. It allow you to add extra information about the users such as user’s full name, phone number etc. 
+# Home directory: The absolute path to the directory the user will be in when they log in. If this directory does not exists then users directory becomes /
+# Command/shell: The absolute path of a command or shell (/bin/bash). Typically, this is a shell. Please note that it does not have to be a shell.
+
 cat /etc/passwd | cut -d ":" -f1,3,6 | tr ":" " "
+
+# cut - remove sections from each line of files.
+# Print selected parts of lines from each FILE to standard output.
+# -d, --delimiter=DELIM — Use DELIM instead of TAB for field delimiter.
+# -f, --fields=LIST — Select only these fields; also print any line that contains no delimiter character, unless the -s option is specified.
+# -s, --only-delimited — Do not print lines not containing delimiters.
+# -t, --translate 

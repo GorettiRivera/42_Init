@@ -1,3 +1,7 @@
 # List all services which are started at boot time and name this kind of services
 
 ls /etc/rc*.d
+
+or 
+
+systemctl list-units --type service
