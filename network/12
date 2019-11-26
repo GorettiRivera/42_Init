@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Find the IP that was assigned to you by dhcp server
 
-ipconfig getpacket en0 | grep ciaddr | awk '{print $3}'
+ifconfig en0 | grep 'inet' | awk 'NR==2{print $2}'

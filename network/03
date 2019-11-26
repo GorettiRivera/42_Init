@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Identify the MAC address of the Wi-Fi card
 
-networksetup -getmacaddress Wi-Fi
+networksetup -getmacaddress Wi-Fi | awk '{print $3}'

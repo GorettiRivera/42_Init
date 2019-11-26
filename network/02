@@ -1,6 +1,8 @@
 #!/bin/bash
+
 # Identify and display the Ethernet interface characteristics:
 # (a) Identify broadcast address
 # (b) Identify all IP adresses which are part of the same subnet
 
-ipconfig getifaddr en0
+ifconfig | grep "broadcast" | cut -d ' ' -f6
+arp -a | grep "org" | cut -d ' ' -f2 | sed "s/(//g;s/)//g" 

@@ -1,5 +1,7 @@
 #!/bin/bash
+
 # Find the provider of slash16.org
 
-Check the IP address of slash16.org and whois with the IP address. 
-The provider is Amazon.
+The provider is Amazon Web Services.
+
+# Check the IP address of slash16.org and whois with the IP address. 

@@ -1,5 +1,7 @@
 #!/bin/bash
+
 # Use the output of the previous command to find the name and IP address of the
 # device that makes the link between you (local network) and the outside world
 
-The IP address is the first line of the traceroute slash16.org command.
+NAT (10.90.1.11) - Network Address Translation
+It makes single IP address out of local networks which is used by the router to conect to Internet
